@@ -1,8 +1,8 @@
-E-Banking Backend Application
+#E-Banking Backend Application
 
 ----------------------------
 
-Project Overview
+##Project Overview
 This project is a Spring Boot application that provides a RESTful API for managing bank accounts, customers, and transactions. 
 It also offers features for viewing transaction history. The project follows best practices by using DTOs (Data Transfer Objects), 
 mappers, and Spring annotations to maintain clean and maintainable code.
