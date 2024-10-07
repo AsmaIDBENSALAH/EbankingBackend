@@ -17,10 +17,14 @@ public interface BanAccountService {
 
     List<CustomerDTO> listCustomers();
     BankAccountDTO getBankAccount(String accountId) throws BankAccountNotFoundException;
-    void debit(String accountId, double amount, String description ) throws BankAccountNotFoundException, BalanceNotSufficientException;
-    void credit(String accountId, double amount, String description ) throws BankAccountNotFoundException;
-    void transfer(String accountIdSource, String accountIdDestination, double amount) throws BankAccountNotFoundException, BalanceNotSufficientException;
 
+
+    void debit(DebitRequestDTO debitRequestDTO) throws BankAccountNotFoundException, BalanceNotSufficientException;
+
+    void credit(CreditRequestDTO creditRequestDTO) throws BankAccountNotFoundException;
+
+
+    void transfer(TransferRequestDTO transferRequestDTO) throws BankAccountNotFoundException, BalanceNotSufficientException;
 
     List<BankAccountDTO> bankAccountList();
 
@@ -31,4 +35,6 @@ public interface BanAccountService {
     void deleteCustomer(Long customerId);
 
     List<AccountOperationDTO> accountHistory(String accountId);
+
+    AccountHistoryDTO getAccountHistory(String accountId, int page, int size) throws BankAccountNotFoundException;
 }

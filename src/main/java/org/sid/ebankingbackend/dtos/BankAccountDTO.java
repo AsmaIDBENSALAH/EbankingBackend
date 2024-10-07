@@ -11,6 +11,5 @@ import java.util.Date;
 @Data
 public class BankAccountDTO {
 
-   private String id;
    private String type;
 }

@@ -11,6 +11,8 @@ import java.util.List;
 
 @Data
 public class CurrentBankAccountDTO extends BankAccountDTO{
+    private String id;
+
     private double balance;//solde
     private Date createdAt;
 
