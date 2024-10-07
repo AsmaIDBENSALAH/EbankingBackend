@@ -33,10 +33,20 @@ Technologies Used
 
 Getting Started
 
-----------------------------
-
-Prerequisites
+*Prerequisites
 
 - Java 17
 - Maven for dependency management
 - An IDE with Spring Boot support
+
+
+----------------------------
+
+API Documentation
+
+This project uses Swagger for API documentation. Below are some screenshots of the Swagger UI:
+
+- ![image](https://github.com/user-attachments/assets/9a8a8032-e1fb-4747-9761-14418aa623bd)
+- ![image](https://github.com/user-attachments/assets/82d8e8e3-8cb1-4c12-b877-b646b8085688)
+
+----------------------------
